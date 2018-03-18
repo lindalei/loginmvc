@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>LoginMVC</display-name>
+  <welcome-file-list>
+    <welcome-file>Login.jsp</welcome-file>
+  </welcome-file-list>
+
+<filter>
+  <filter-name>RequestEncodingFilter</filter-name>
+  <filter-class>com.mvc.util.RequestEncodingFilter</filter-class>
+</filter>
+<filter-mapping>
+  <filter-name>RequestEncodingFilter</filter-name>
+  <url-pattern>/*</url-pattern>
+</filter-mapping>
+  <servlet>
+  <description></description>
+  <servlet-name>LoginServlet</servlet-name>
+  <servlet-class>com.mvc.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+   <servlet>
+  <description></description>
+  <servlet-name>UpdateUserProfileServlet</servlet-name>
+  <servlet-class>com.mvc.controller.UpdateUserProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>UpdateUserProfileServlet</servlet-name>
+  <url-pattern>/UpdateUserProfileServlet</url-pattern>
+  </servlet-mapping>
+    <servlet>
+  <description></description>
+  <servlet-name>LogoutServlet</servlet-name>
+  <servlet-class>com.mvc.controller.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LogoutServlet</servlet-name>
+  <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+   <servlet>
+  <description></description>
+  <servlet-name>UserProfileServlet</servlet-name>
+  <servlet-class>com.mvc.controller.UserProfileServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>UserProfileServlet</servlet-name>
+  <url-pattern>/UserProfileServlet</url-pattern>
+  </servlet-mapping>
+   <servlet>
+  <description></description>
+  <servlet-name>RegisterServlet</servlet-name>
+  <servlet-class>com.mvc.controller.RegisterServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>RegisterServlet</servlet-name>
+  <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+   <servlet>
+  <description></description>
+  <servlet-name>UserProfileValidateServlet</servlet-name>
+  <servlet-class>com.mvc.controller.UserProfileValidateServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>UserProfileValidateServlet</servlet-name>
+  <url-pattern>/UserProfileValidateServlet</url-pattern>
+  </servlet-mapping>
+    <servlet>
+  <description></description>
+  <servlet-name>ShowUsersServlet</servlet-name>
+  <servlet-class>com.mvc.controller.ShowUsersServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>ShowUsersServlet</servlet-name>
+  <url-pattern>/ShowUsersServlet</url-pattern>
+  </servlet-mapping>
+    <servlet>
+  <servlet-name>FilterServlet</servlet-name>
+  <servlet-class>com.mvc.controller.FilterServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>FilterServlet</servlet-name>
+  <url-pattern>/FilterServlet</url-pattern>
+  </servlet-mapping>
+      <servlet>
+  <servlet-name>SearchUsersServlet</servlet-name>
+  <servlet-class>com.mvc.controller.SearchUsersServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>SearchUsersServlet</servlet-name>
+  <url-pattern>/SearchUsersServlet</url-pattern>
+  </servlet-mapping>
+   <servlet>
+  <servlet-name>TestServlet</servlet-name>
+  <servlet-class>com.mvc.controller.TestServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>TestServlet</servlet-name>
+  <url-pattern>/TestServlet</url-pattern>
+  </servlet-mapping>
+   <context-param>
+    <param-name>IMAGE_FILEBASE</param-name>
+    <param-value>C:\Pic\ </param-value>
+  </context-param>
+</web-app>
